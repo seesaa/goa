@@ -16,7 +16,7 @@ DIRS=$(shell go list -f {{.Dir}} ./...)
 # Standard dependencies are installed via go get
 DEPEND=\
 	github.com/go-openapi/loads \
-	github.com/goadesign/goa-cellar \
+	github.com/seesaa/goa-cellar \
 	github.com/fzipp/gocyclo \
 	github.com/onsi/ginkgo \
 	github.com/onsi/ginkgo/ginkgo \

@@ -3,7 +3,7 @@ package jwt
 import (
 	"errors"
 
-	"github.com/goadesign/goa"
+	"github.com/seesaa/goa"
 )
 
 var (

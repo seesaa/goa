@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/goadesign/goa/design"
+	"github.com/seesaa/goa/design"
 )
 
 var (

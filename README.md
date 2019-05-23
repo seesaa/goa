@@ -3,18 +3,18 @@
 goa is a framework for building micro-services and REST APIs in Go using a
 unique design-first approach.
 
-## This branch is deprecated, use the [v3 branch](https://github.com/goadesign/goa/tree/v3) for the latest.
+## This branch is deprecated, use the [v3 branch](https://github.com/seesaa/goa/tree/v3) for the latest.
 
 ---
 [![Build Status](https://travis-ci.org/goadesign/goa.svg?branch=master)](https://travis-ci.org/goadesign/goa)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/vixp37loj5i6qmaf/branch/master?svg=true)](https://ci.appveyor.com/project/RaphaelSimon/goa-oqtis/branch/master)
-[![Sourcegraph](https://sourcegraph.com/github.com/goadesign/goa/-/badge.svg)](https://sourcegraph.com/github.com/goadesign/goa?badge)
-[![Godoc](https://godoc.org/github.com/goadesign/goa?status.svg)](http://godoc.org/github.com/goadesign/goa)
+[![Sourcegraph](https://sourcegraph.com/github.com/seesaa/goa/-/badge.svg)](https://sourcegraph.com/github.com/goadesign/goa?badge)
+[![Godoc](https://godoc.org/github.com/seesaa/goa?status.svg)](http://godoc.org/github.com/goadesign/goa)
 [![Slack](https://img.shields.io/badge/slack-gophers-orange.svg?style=flat)](https://gophers.slack.com/messages/goa/)
 
 ## V2
 
-[goa v2](https://github.com/goadesign/goa/tree/v2) is currently in beta:
+[goa v2](https://github.com/seesaa/goa/tree/v2) is currently in beta:
 it is robust enough to be used in production but there may still be breaking
 changes before the final release. If you're new to goa then you may want to
 consider starting with v2.
@@ -77,7 +77,7 @@ the same pattern and was an inspiration to goa.
 
 Assuming you have a working [Go](https://golang.org) setup:
 ```
-go get -u github.com/goadesign/goa/...
+go get -u github.com/seesaa/goa/...
 ```
 
 ### Stable Versions
@@ -101,8 +101,8 @@ Create the file `$GOPATH/src/goa-adder/design/design.go` with the following cont
 package design
 
 import (
-        . "github.com/goadesign/goa/design"
-        . "github.com/goadesign/goa/design/apidsl"
+        . "github.com/seesaa/goa/design"
+        . "github.com/seesaa/goa/design/apidsl"
 )
 
 var _ = API("adder", func() {
@@ -250,7 +250,7 @@ For open source projects hosted on
 github [swagger.goa.design](http://swagger.goa.design) provides a free service
 that renders the Swagger representation dynamically from goa design packages.
 Simply set the `url` query string with the import path to the design package.
-For example displaying the docs for `github.com/goadesign/goa-cellar/design` is
+For example displaying the docs for `github.com/seesaa/goa-cellar/design` is
 done by browsing to:
 
 http://swagger.goa.design/?url=goadesign%2Fgoa-cellar%2Fdesign
@@ -340,10 +340,10 @@ started guide, detailed DSL documentation as well as information on how to imple
 
 ### Examples
 
-The [examples](https://github.com/goadesign/examples) repo contains simple examples illustrating
+The [examples](https://github.com/seesaa/examples) repo contains simple examples illustrating
 basic concepts.
 
-The [goa-cellar](https://github.com/goadesign/goa-cellar) repo contains the implementation for a
+The [goa-cellar](https://github.com/seesaa/goa-cellar) repo contains the implementation for a
 goa service which demonstrates many aspects of the design language. It is kept up-to-date and
 provides a reference for testing functionality.
 

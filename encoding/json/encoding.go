@@ -3,7 +3,7 @@ package json
 import (
 	"io"
 
-	"github.com/goadesign/goa"
+	"github.com/seesaa/goa"
 	"github.com/ugorji/go/codec"
 )
 

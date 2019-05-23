@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goadesign/goa/dslengine"
+	"github.com/seesaa/goa/dslengine"
 )
 
 // MediaTypeRoot is the data structure that represents the additional DSL definition root
@@ -88,16 +88,16 @@ var (
 	// KnownEncoders contains the list of encoding packages and factories known by goa indexed
 	// by MIME type.
 	KnownEncoders = map[string]string{
-		"application/json":      "github.com/goadesign/goa",
-		"application/xml":       "github.com/goadesign/goa",
-		"application/gob":       "github.com/goadesign/goa",
-		"application/x-gob":     "github.com/goadesign/goa",
-		"application/binc":      "github.com/goadesign/goa/encoding/binc",
-		"application/x-binc":    "github.com/goadesign/goa/encoding/binc",
-		"application/cbor":      "github.com/goadesign/goa/encoding/cbor",
-		"application/x-cbor":    "github.com/goadesign/goa/encoding/cbor",
-		"application/msgpack":   "github.com/goadesign/goa/encoding/msgpack",
-		"application/x-msgpack": "github.com/goadesign/goa/encoding/msgpack",
+		"application/json":      "github.com/seesaa/goa",
+		"application/xml":       "github.com/seesaa/goa",
+		"application/gob":       "github.com/seesaa/goa",
+		"application/x-gob":     "github.com/seesaa/goa",
+		"application/binc":      "github.com/seesaa/goa/encoding/binc",
+		"application/x-binc":    "github.com/seesaa/goa/encoding/binc",
+		"application/cbor":      "github.com/seesaa/goa/encoding/cbor",
+		"application/x-cbor":    "github.com/seesaa/goa/encoding/cbor",
+		"application/msgpack":   "github.com/seesaa/goa/encoding/msgpack",
+		"application/x-msgpack": "github.com/seesaa/goa/encoding/msgpack",
 	}
 
 	// KnownEncoderFunctions contains the list of encoding encoder and decoder functions known
@@ -188,7 +188,7 @@ var (
 )
 
 func init() {
-	goa := "github.com/goadesign/goa"
+	goa := "github.com/seesaa/goa"
 	DefaultEncoders = []*EncodingDefinition{
 		{MIMETypes: JSONContentTypes, PackagePath: goa, Function: "NewJSONEncoder"},
 		{MIMETypes: XMLContentTypes, PackagePath: goa, Function: "NewXMLEncoder"},

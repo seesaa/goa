@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goadesign/goa"
+	"github.com/seesaa/goa"
 
 	"context"
 )

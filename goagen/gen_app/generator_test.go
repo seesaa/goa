@@ -8,11 +8,11 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/goadesign/goa/design"
-	"github.com/goadesign/goa/dslengine"
-	"github.com/goadesign/goa/goagen/codegen"
-	genapp "github.com/goadesign/goa/goagen/gen_app"
-	"github.com/goadesign/goa/version"
+	"github.com/seesaa/goa/design"
+	"github.com/seesaa/goa/dslengine"
+	"github.com/seesaa/goa/goagen/codegen"
+	genapp "github.com/seesaa/goa/goagen/gen_app"
+	"github.com/seesaa/goa/version"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
@@ -326,7 +326,7 @@ package app
 
 import (
 	"context"
-	"github.com/goadesign/goa"
+	"github.com/seesaa/goa"
 	"net/http"
 )
 
@@ -378,7 +378,7 @@ package app
 
 import (
 	"context"
-	"github.com/goadesign/goa"
+	"github.com/seesaa/goa"
 	"net/http"
 )
 

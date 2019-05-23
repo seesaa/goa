@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/goadesign/goa"
-	"github.com/goadesign/goa/client"
+	"github.com/seesaa/goa"
+	"github.com/seesaa/goa/client"
 )
 
 var (

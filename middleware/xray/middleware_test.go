@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goadesign/goa"
-	"github.com/goadesign/goa/middleware"
+	"github.com/seesaa/goa"
+	"github.com/seesaa/goa/middleware"
 )
 
 const (

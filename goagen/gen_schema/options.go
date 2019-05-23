@@ -1,6 +1,6 @@
 package genschema
 
-import "github.com/goadesign/goa/design"
+import "github.com/seesaa/goa/design"
 
 //Option a generator option definition
 type Option func(*Generator)

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/goadesign/goa/design"
-	"github.com/goadesign/goa/goagen/codegen"
+	"github.com/seesaa/goa/design"
+	"github.com/seesaa/goa/goagen/codegen"
 )
 
 func (g *Generator) generateMain(mainFile string, clientPkg, cliPkg string, funcs template.FuncMap) (err error) {
@@ -36,8 +36,8 @@ func (g *Generator) generateMain(mainFile string, clientPkg, cliPkg string, func
 		codegen.SimpleImport(clientPkg),
 		codegen.SimpleImport(cliPkg),
 		codegen.SimpleImport("github.com/spf13/cobra"),
-		codegen.NewImport("goaclient", "github.com/goadesign/goa/client"),
-		codegen.NewImport("uuid", "github.com/goadesign/goa/uuid"),
+		codegen.NewImport("goaclient", "github.com/seesaa/goa/client"),
+		codegen.NewImport("uuid", "github.com/seesaa/goa/uuid"),
 	}
 	if err = file.WriteHeader("", "main", imports); err != nil {
 		return err
@@ -136,15 +136,15 @@ func (g *Generator) generateCommands(commandsFile string, clientPkg string, func
 		codegen.SimpleImport("strings"),
 		codegen.SimpleImport("strconv"),
 		codegen.SimpleImport("time"),
-		codegen.SimpleImport("github.com/goadesign/goa"),
+		codegen.SimpleImport("github.com/seesaa/goa"),
 		codegen.SimpleImport("github.com/spf13/cobra"),
 		codegen.SimpleImport(clientPkg),
 		codegen.SimpleImport("context"),
 		codegen.SimpleImport("golang.org/x/net/websocket"),
-		codegen.NewImport("uuid", "github.com/goadesign/goa/uuid"),
+		codegen.NewImport("uuid", "github.com/seesaa/goa/uuid"),
 	}
 	if len(g.API.Resources) > 0 {
-		imports = append(imports, codegen.NewImport("goaclient", "github.com/goadesign/goa/client"))
+		imports = append(imports, codegen.NewImport("goaclient", "github.com/seesaa/goa/client"))
 	}
 	title := fmt.Sprintf("%s: CLI Commands", g.API.Context())
 	if err = file.WriteHeader(title, "cli", imports); err != nil {

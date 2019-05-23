@@ -6,8 +6,8 @@ import (
 
 	"context"
 
-	"github.com/goadesign/goa"
-	"github.com/goadesign/goa/middleware"
+	"github.com/seesaa/goa"
+	"github.com/seesaa/goa/middleware"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

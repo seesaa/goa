@@ -1,6 +1,6 @@
 package design
 
-import "github.com/goadesign/goa/dslengine"
+import "github.com/seesaa/goa/dslengine"
 
 // Dup creates a copy the given data type.
 func Dup(d DataType) DataType {

@@ -3,9 +3,9 @@ package codegen_test
 import (
 	"fmt"
 
-	"github.com/goadesign/goa/design"
-	"github.com/goadesign/goa/dslengine"
-	"github.com/goadesign/goa/goagen/codegen"
+	"github.com/seesaa/goa/design"
+	"github.com/seesaa/goa/dslengine"
+	"github.com/seesaa/goa/goagen/codegen"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

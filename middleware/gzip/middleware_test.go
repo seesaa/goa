@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goadesign/goa"
-	gzm "github.com/goadesign/goa/middleware/gzip"
+	"github.com/seesaa/goa"
+	gzm "github.com/seesaa/goa/middleware/gzip"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

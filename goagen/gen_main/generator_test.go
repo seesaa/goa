@@ -7,16 +7,16 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/goadesign/goa/design"
-	genmain "github.com/goadesign/goa/goagen/gen_main"
-	"github.com/goadesign/goa/version"
+	"github.com/seesaa/goa/design"
+	genmain "github.com/seesaa/goa/goagen/gen_main"
+	"github.com/seesaa/goa/version"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 )
 
 var _ = Describe("Generate", func() {
-	const testgenPackagePath = "github.com/goadesign/goa/goagen/gen_main/goatest"
+	const testgenPackagePath = "github.com/seesaa/goa/goagen/gen_main/goatest"
 
 	var outDir string
 	var files []string

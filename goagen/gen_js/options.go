@@ -1,6 +1,6 @@
 package genjs
 
-import "github.com/goadesign/goa/design"
+import "github.com/seesaa/goa/design"
 import "time"
 
 //Option a generator option definition
